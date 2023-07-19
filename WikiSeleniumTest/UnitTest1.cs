@@ -33,7 +33,7 @@ public class WikiSeleniumTest
     }
 
     [Test]
-    public void Locators()
+    public void LocatorsPractice()
     {
         driver.Navigate().GoToUrl("https://konturru-master.ws.testkontur.ru/private/landing?domain=kontur.ru&path=/diadocseleniumref");
         //Локатор блока “Зарабатывайте на рекомендациях”
@@ -55,6 +55,52 @@ public class WikiSeleniumTest
         //Локатор текста в лайтбоксе об успешной отправке 
         var successMessageText =
             driver.FindElement(By.CssSelector(".form-message.form-message_success [data-role='success-message-text']"));
+    }
+
+    [Test]
+    public void LocatorsHomework()
+    {
+        driver.Navigate()
+            .GoToUrl("https://konturru-master.ws.testkontur.ru/private/landing?domain=kontur.ru&path=/diadocselenium");
+        //На Странице 1 Локатор кнопки “Попробовать” в обложке tryButton
+        //На Странице 1  Локатор кнопки “Отправить заявку” внизу страницы sendOrderButton
+        driver.Navigate()
+            .GoToUrl(
+                "https://konturru-master.ws.testkontur.ru/private/landing?domain=kontur.ru&path=/diadocseleniumintegration");
+        //На Странице 2 Локатор Виджета Заявки в конце страницы widgetForm
+        
+        //На Странице 2 в Виджете Заявки нужны следующие локаторы:
+        //surnameInput - поле ввода Фамилии
+        
+        //nameInput - поле ввода Имени
+        
+        //regionSelect - селект Региона
+        
+        //emailInput - поле ввода Email
+        
+        //emailInputValidationError - локатор ошибки, если ввели неверный Email
+        
+        //phoneInput - поле ввода Телефона
+        
+        //companyNameInput - поле ввода Организации
+        
+        //organizationSuggest - саджест Организации 
+            //*Чтобы увидеть саджест, например, введите СКБ и нажмите пробел
+            
+        //organizationSuggestFirstItem - первый элемент в саджесте Организации
+        
+        //contragentsFileUploaderInput - поле загрузки файла Список Контрагентов
+        
+        //fileNameLabel - лейбл с названием загруженного файла
+        
+        //customDayCheckbox - чекбокс Связаться в определённый день
+        
+        //datePicker - поле ввода Даты
+        
+        //submitButton - кнока “Отправить заявку”
+        
+        //Заголовок об успешной отправке “Заявка отправлена” successMessageTitle 
+
     }
 
     [TearDown]
