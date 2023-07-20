@@ -1,7 +1,7 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f61e0221_002D19f7_002D4fd8_002D8138_002Dfb42011feb6a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Locators" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::F7C424CE-7864-459E-ACB6-095B227D995E::net7.0::WikiSeleniumTest.WikiSeleniumTest.Locators&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F7C424CE-7864-459E-ACB6-095B227D995E::net7.0::WikiSeleniumTest.WikiSeleniumTest.LocatorsHomework&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	

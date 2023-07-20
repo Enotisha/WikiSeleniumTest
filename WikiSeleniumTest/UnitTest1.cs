@@ -63,44 +63,46 @@ public class WikiSeleniumTest
         driver.Navigate()
             .GoToUrl("https://konturru-master.ws.testkontur.ru/private/landing?domain=kontur.ru&path=/diadocselenium");
         //На Странице 1 Локатор кнопки “Попробовать” в обложке tryButton
+        var tryBytton = driver.FindElement(By.XPath("//a[@id='try-button']"));
         //На Странице 1  Локатор кнопки “Отправить заявку” внизу страницы sendOrderButton
+        var sendOrderButton = driver.FindElement(By.XPath("//a[@data-short-text='Отправить заявку']"));
         driver.Navigate()
             .GoToUrl(
                 "https://konturru-master.ws.testkontur.ru/private/landing?domain=kontur.ru&path=/diadocseleniumintegration");
         //На Странице 2 Локатор Виджета Заявки в конце страницы widgetForm
-        
+        var widgetForm = driver.FindElement(By.XPath("//section[@id='order']"));
         //На Странице 2 в Виджете Заявки нужны следующие локаторы:
         //surnameInput - поле ввода Фамилии
-        
+        var surnameInput = driver.FindElement(By.XPath("//input[@data-field-role='surname']"));
         //nameInput - поле ввода Имени
-        
+        var nameInput = driver.FindElement(By.XPath("//input[@data-field-role='name']"));
         //regionSelect - селект Региона
-        
+        var regionSelect = driver.FindElement(By.XPath("//select[@id='fw_field_d8c4659176174a3f94d70a6d9ca1284c_86874da4fcad4e43bd395579b42e649e']"));
         //emailInput - поле ввода Email
-        
+        var emailInput = driver.FindElement(By.XPath("//input[@id='fw_field_f5ae77bd069f45348c7df20a61a41afa_86874da4fcad4e43bd395579b42e649e']"));
         //emailInputValidationError - локатор ошибки, если ввели неверный Email
-        
+        var emailInputValidationError = driver.FindElement(By.XPath("//div[@data-valmsg-for='f5ae77bd-069f-4534-8c7d-f20a61a41afa']"));
         //phoneInput - поле ввода Телефона
-        
+        var phoneInput = driver.FindElement(By.XPath("//input[@type='tel']"));
         //companyNameInput - поле ввода Организации
-        
+        var companyNameInput = driver.FindElement(By.XPath("//input[@data-field-role='company-name']"));
         //organizationSuggest - саджест Организации 
-            //*Чтобы увидеть саджест, например, введите СКБ и нажмите пробел
-            
+        //*Чтобы увидеть саджест, например, введите СКБ и нажмите пробел
+        var organizationSuggest = driver.FindElement(By.XPath("//div[@class='organization-suggest-container']"));
         //organizationSuggestFirstItem - первый элемент в саджесте Организации
-        
+        var organizationSuggestFirstItem = driver.FindElement(By.XPath("//div[@class='autocomplete-suggestion'][1]"));
         //contragentsFileUploaderInput - поле загрузки файла Список Контрагентов
-        
+        var contragentsFileUploaderInput = driver.FindElement(By.XPath("//input[@name='3860739e-5d33-440f-a23c-310b10459272.fileuploader']"));
         //fileNameLabel - лейбл с названием загруженного файла
-        
+        var fileNameLabel = driver.FindElement(By.XPath("//div[@class='file-loader__filename-wrap']"));
         //customDayCheckbox - чекбокс Связаться в определённый день
-        
+        var customDayCheckbox = driver.FindElement(By.XPath("//input[@id='fw_field_4feae0d3ddf442d695e253148603373d_86874da4fcad4e43bd395579b42e649e']"));
         //datePicker - поле ввода Даты
-        
-        //submitButton - кнока “Отправить заявку”
-        
+        var datePicker = driver.FindElement(By.XPath("//input[@id='fw_field_99cbbe31767b4ae4a90c3f2f43d83c89_86874da4fcad4e43bd395579b42e649e']"));
+        //submitButton - кнопка “Отправить заявку”
+        var submitButton = driver.FindElement(By.XPath("//button[@type='submit']"));
         //Заголовок об успешной отправке “Заявка отправлена” successMessageTitle 
-
+        var successMessageTitle = driver.FindElement(By.XPath("//div[@class='form-message form-message_success']"));
     }
 
     [TearDown]
